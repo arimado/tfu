@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>An XHTML 1.0 Strict standard template</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="style.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="jquery.videoBG.js"></script>
+    <script type="text/javascript" src="jquery.fitvids.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<script>
+        $(document).ready(function(){
+            var pull = $('#pull');
+                menu = $('nav ul');
+                menuHeight = menu.height();
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            }); 
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                } 
+            });
+
+             $('#vid').videoBG({
+                mp4:'sunrise.mp4',
+                ogv:'sunrise.ogv',
+                webm:'sunrise.webm',
+                poster:'sunrise.png',
+                height: '100%',
+                width: '100%',
+                scale:true,
+                zIndex: -20
+                
+            }); 
+
+            $(".trailer").fitVids();
+
+
+        });
+    </script>
+<body>
+	<!-- <nav class="clearfix navigation">  
+    <ul class="clearfix">  
+        <li><a href="#">TRAILER</a></li>  
+        <li><a href="#">CONTACT</a></li>  
+        <li><a href="#">CREDITS</a></li>  
+        <li><a href="#">AWARDS</a></li>  
+        <li><a href="#">UPDATES</a></li>     
+    </ul>  
+    <a href="#" id="pull">Menu</a> 
+</nav>  -->
+
+<div class="section s1 screen"> 
+    <ul>
+        <li>THE FUCK UP</li>
+        <li>A tale of murder most foul.</li>
+    </ul> 
+    <div id="vid"></div>
+</div> 
+
+
+<div class="section s2"> 
+    <div class="bigTxt"> 
+        <div class="script left-line">I can't do it.</div>
+        <div class="script right-line">What do you mean you can't do it?</div>
+        <div class="script left-line">I can't.</div>
+        <div class="script bot right-line">This is the price you have to pay.</div>
+         <div class="script center-line">Now pick up that hammer.</div>
+    </div>
+    <div class="trailer"> <iframe src="http://player.vimeo.com/video/69726081?portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+    <div class="blurb"> </div>
+</div>
+
+<div class="section footer">
+    <div class="sf">
+        <ul class="dl-list">
+            <li> <a href="#">EPK </br> <span class="dl-blurb">(1.2mb)</span> </a></li> 
+            <li> <a href="#">TRAILER </br> <span class="dl-blurb">(4.2mb)</span> </a></li> 
+            <li> <a href="#">STILLS </br> <span class="dl-blurb"> (50mb) </span>  </a></li>
+             <li> <a href="#">CONTACT </br> <span class="dl-blurb"> joel@tfumovie </span> </a> </li>
+        </ul> 
+    </div>
+</div>
+
+<div class="section updates su">
+    <div class="updates-header"> Updates </div>
+    <div class="update">
+        <div class="update-body"> <span class="date">12/6/13</span> This is a thing, most likely pulled from twitter!</div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
