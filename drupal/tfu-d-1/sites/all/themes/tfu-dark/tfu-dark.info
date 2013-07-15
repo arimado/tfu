@@ -1,0 +1,9 @@
+name        = tfu-dark
+description = dark responsive theme for tfu
+core        = 7.x
+
+stylesheets[all][] = stylesheets/style.css
+
+scripts[] = js/global.js
+
+regions[content] = Content

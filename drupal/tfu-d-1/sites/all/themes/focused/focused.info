@@ -1,0 +1,10 @@
+name        = focused
+description = focused theme for TFU website
+core        = 7.x
+
+stylesheets[all][] = stylesheets/style.css
+scripts[] = js/script.js
+
+regions[content] = Content
+
+

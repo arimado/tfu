@@ -1,0 +1,31 @@
+<div class="section s1 screen"> 
+    <ul>
+        <li>[field_short_title]</li>
+        <li>[field_tagline]</li>
+    </ul> 
+    <div id="vid"></div>
+</div> 
+
+
+<div class="section s2"> 
+    <div class="bigTxt"> 
+        [body]
+    </div>
+    <div class="trailer"> [field_video]</div>
+</div>
+
+<div class="section footer">
+    <div class="sf">
+       [field_links]
+    </div>
+</div>
+
+
+ <div class="updates-header"> Updates </div>
+ 
+<div class="section updates su">
+   
+    <div class="update">
+        <div class="update-body"> <span class="date">[created]</span> [body]</div>
+    </div>
+</div>
